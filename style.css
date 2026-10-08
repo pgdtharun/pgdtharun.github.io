@@ -1,0 +1,123 @@
+/* ---------- Colour theme: change colours here only ---------- */
+:root {
+    --bg: #0a1a14;
+    --surface: #11271e;
+    --border: #21412f;
+    --text: #e8f1ec;
+    --muted: #9db5a8;
+    --accent: #3ddc97;
+    --heading: #ffffff;
+}
+
+/* ---------- Base ---------- */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--heading);
+}
+
+h2 {
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+}
+
+h3 {
+    color: var(--heading);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Header and menu ---------- */
+header {
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+header p {
+    color: var(--muted);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: var(--surface);
+    text-decoration: none;
+}
+
+/* ---------- Sections and lists ---------- */
+section {
+    margin-bottom: 40px;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* ---------- Project cards ---------- */
+article {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+article:hover {
+    border-color: var(--accent);
+}
+
+[data-theme="light"] {
+    --bg: #f4f8f5;
+    --surface: #ffffff;
+    --border: #cfe0d6;
+    --text: #12261c;
+    --muted: #4d6a5a;
+    --accent: #0f7a4d;
+    --heading: #0a1a14;
+}
+
+#theme-toggle {
+    background-color: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    border-color: var(--accent);
+}
